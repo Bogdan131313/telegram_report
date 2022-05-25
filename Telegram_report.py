@@ -26,7 +26,7 @@ def my_test_report(chat=None, message=None, graph_list=None, report_date=None):
          bot.sendDocument(chat_id=chat_id, document=doc)
 
 
-# Определяем дату отчета
+# Getting report date
 report_date = datetime.strftime(datetime.now() - timedelta(days=1, hours=-3), '%d-%m-%Y')
 
 
