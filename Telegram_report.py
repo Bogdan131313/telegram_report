@@ -12,7 +12,8 @@ my_chat_id = 267912614
 
 def my_test_report(chat=None, message=None, graph_list=None, report_date=None):
     chat_id = chat
-    bot = telegram.Bot(token='5351849446:AAFMF9leWqJU7qY5IINEceJnjiGPWddZI0k')
+    bot = telegram.Bot(token='5351849446:AAFMF9leWqJU7qY5IINEceJnjiGPWddZI0k') # your telegram bot token
+    # bot = telegram.Bot(token=os.environ.get("REPORT_BSBOT_TOKEN")) or you can dot it with CI/CD variables
     #report_date = datetime.strftime(datetime.now() - timedelta(1), '%d-%m-%Y')
 
 
